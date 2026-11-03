@@ -1,0 +1,7 @@
+node_modules
+dist
+# raw source files (image copy 4.png shows login details)
+image*.png
+pen.jpg
+2026*.mp4
+/Dong_Ban_Tran_CV.pdf

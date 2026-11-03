@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dong Ban Tran — AI Marketing Automation Specialist</title>
+  <meta name="description" content="AI Marketing Automation Specialist in Da Nang, Vietnam. I build n8n and LLM systems that turn content into reach and affiliate revenue, across a network of 500+ channels." />
+  <meta property="og:title" content="Dong Ban Tran — AI Marketing Automation Specialist" />
+  <meta property="og:description" content="n8n and LLM systems that turn content into reach and affiliate revenue, across a network of 500+ channels." />
+  <meta name="theme-color" content="#0d0c0a" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__mark" href="#top" aria-label="Back to top">DBT</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#workflows">Workflows</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__cv" href="/Dong_Ban_Tran_CV.pdf" download>CV ↓</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <canvas id="network" aria-hidden="true"></canvas>
+      <div class="hero__copy">
+        <p class="eyebrow">AI Marketing Automation Specialist · Da Nang, Vietnam</p>
+        <h1>Dong Ban Tran</h1>
+        <p class="hero__lede">I build n8n and LLM systems that turn content into reach and affiliate revenue.</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#workflows">See the workflows</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <img class="about__photo" src="/photo.jpg" alt="Portrait of Dong Ban Tran in a graduation gown" width="320" height="400" loading="lazy" />
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Content networks, run by machines</h2>
+        <p>I deploy and operate content networks of <strong>500+ channels</strong> across Amazon niches, backed by a solid foundation in <strong>Meta Business Suite</strong> and fanpage asset management.</p>
+        <p>I also build marketing websites end-to-end that pull data from Amazon, social and AI APIs, and I've led AI automation teams delivering workflows that significantly improve marketing productivity.</p>
+        <dl class="facts">
+          <div><dt>500+</dt><dd>channels operated</dd></div>
+          <div><dt>2+ yrs</dt><dd>n8n &amp; LLM systems</dd></div>
+          <div><dt>Team Lead</dt><dd>AI Automation Team</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WORKFLOWS -->
+    <section id="workflows" class="section">
+      <p class="eyebrow">Workflows I've deployed</p>
+      <h2>Real automations, from the canvas</h2>
+      <p class="section__lede">Five examples, shown as they were built. Click a diagram to open it at full size.</p>
+
+      <article class="flow">
+        <div class="flow__head">
+          <p class="flow__tag">01 · Make.com</p>
+          <h3>Auto-publishing from Instagram, Facebook and YouTube Shorts</h3>
+          <p>A Google Sheet of source links drives the whole run. A router sends each link down its platform's branch, where the real video ID is resolved, the file is downloaded and published as a Facebook Reel, and the row is updated with the result.</p>
+        </div>
+        <a class="flow__fig flow__fig--light" href="/flows/repost.webp" target="_blank" rel="noopener">
+          <img src="/flows/repost.webp" width="1755" height="673" loading="lazy" alt="Make.com scenario: Google Sheets, iterator and router into three identical branches for Instagram Reels, Facebook Reels and YouTube Shorts. Each extracts the link, resolves the video ID, downloads the video, publishes a Reel and updates the sheet." />
+        </a>
+      </article>
+
+      <article class="flow">
+        <div class="flow__head">
+          <p class="flow__tag">02 · Make.com · AI</p>
+          <h3>TikTok video translation and dubbing</h3>
+          <p>Automatically translates and dubs TikTok videos into a specified target language, generates a fitting caption with AI, and saves the results to Google Sheets.</p>
+        </div>
+        <a class="flow__fig flow__fig--light flow__fig--narrow" href="/flows/dubbing.webp" target="_blank" rel="noopener">
+          <img src="/flows/dubbing.webp" width="890" height="642" loading="lazy" alt="Large branching Make.com scenario routing videos through dubbing requests, file storage, AI caption writing and Google Sheets updates." />
+        </a>
+      </article>
+
+      <article class="flow">
+        <div class="flow__head">
+          <p class="flow__tag">03 · n8n · Meta Graph API</p>
+          <h3>Bulk fanpage setup: avatar, cover, bio and website</h3>
+          <p>Loops through pages listed in a sheet, gets each page's access token, then uploads and sets the avatar and cover, and adds the bio and website link when provided. Every failed step is logged back to the sheet, with a 30–60 second pause between pages.</p>
+        </div>
+        <a class="flow__fig" href="/flows/fanpage-setup.webp" target="_blank" rel="noopener">
+          <img src="/flows/fanpage-setup.webp" width="1320" height="336" loading="lazy" alt="n8n workflow in a rising staircase: read sheet, loop rows, normalise links, get token, upload and set avatar, upload and set cover, set bio and website, update sheet, with error paths to a log step and a wait." />
+        </a>
+      </article>
+
+      <article class="flow">
+        <div class="flow__head">
+          <p class="flow__tag">04 · n8n · AI agent</p>
+          <h3>Automatic candidate replies on a recruitment fanpage</h3>
+          <p>Incoming messages arrive by webhook. Images are analysed first, then an AI agent with conversation memory answers from recruitment documents and an FAQ kept in Google Sheets, and sends its reply back to the candidate.</p>
+        </div>
+        <a class="flow__fig" href="/flows/candidate-chat.webp" target="_blank" rel="noopener">
+          <img src="/flows/candidate-chat.webp" width="1570" height="688" loading="lazy" alt="n8n workflow: webhook, image check, OpenAI image analysis, then AI agents using an OpenAI chat model, memory, and recruitment and FAQ sheets as tools, followed by output formatting and a respond step." />
+        </a>
+      </article>
+
+      <article class="flow flow--verda">
+        <div class="flow__head">
+          <p class="flow__tag">05 · Tool · AI video</p>
+          <h3>Verda: video ads from an Amazon product link</h3>
+          <p>A tool I deployed that generates a video ad from an Amazon product link, with an AI script, voiceover and avatar. The clip here is a finished output.</p>
+          <p class="flow__link"><a href="https://verda-ai-studio.vercel.app/" target="_blank" rel="noopener">verda-ai-studio.vercel.app ↗</a><span class="status">Server under maintenance</span></p>
+          <img class="verda__shot" src="/flows/verda.webp" width="590" height="540" loading="lazy" alt="Verda landing page: Turn product links into scroll-stopping video ads, with AI script, voiceover and avatars." />
+        </div>
+        <video class="verda__video" controls playsinline preload="none" poster="/flows/verda-demo.jpg" width="720" height="1280" aria-label="Sample vertical video ad generated by Verda for a smartwatch">
+          <source src="/flows/verda-demo.mp4" type="video/mp4" />
+        </video>
+      </article>
+
+      <p class="flows__more">…and many other automation workflows.</p>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section">
+      <p class="eyebrow">Core expertise</p>
+      <h2>What I do</h2>
+      <div class="grid3">
+        <div>
+          <h3>Multi-channel content systems at scale</h3>
+          <p>Content networks on Facebook, TikTok and YouTube by Amazon niche: Home &amp; Kitchen, Beauty &amp; Personal Care, Baby Products, Pet Supplies, Toys &amp; Games and more, automated end-to-end from content sourcing to scheduled publishing.</p>
+        </div>
+        <div>
+          <h3>Marketing websites &amp; API integration</h3>
+          <p>End-to-end sites that convert social traffic into clicks, integrating Meta Graph API, TikTok and Facebook data via RapidAPI, Helium 10 product research, Apify scrapers, and OpenAI, DeepSeek and Claude. Data backends on Apps Script webhooks, Google Sheets and PostgreSQL.</p>
+        </div>
+        <div>
+          <h3>Meta Business Suite &amp; fanpage assets</h3>
+          <p>Business Manager assets at scale: fanpages, roles and permissions, partner access, page access tokens. Portfolios structured by niche and market, kept healthy, policy-compliant and recoverable, with AdsPower and proxies for multi-asset operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've worked</h2>
+      <div class="job">
+        <div class="job__when">Aug 2024 – 2026</div>
+        <div>
+          <h3>AVE Global</h3>
+          <p class="role">AI Automation Specialist → Team Leader</p>
+          <ul class="list">
+            <li>Promoted from Meta BM asset operations to founding and leading the AI Automation Team, extending automation from Marketing to HR, Administration and Fulfillment.</li>
+            <li>Built end-to-end AI and LLM workflows that significantly improved Marketing productivity.</li>
+            <li>Managed Meta BM assets for a network of 500+ channels and ran media production pipelines for niche products in international markets.</li>
+            <li>Built AI chatbot agents for page networks on Smax and with n8n RAG (knowledge base + LLM) to answer customer questions automatically.</li>
+            <li>Built internal web tools: a media-creation app, a CRM for automated page management, and automated performance-reporting dashboards.</li>
+            <li>Standardized company-wide SOPs and built cross-department training and onboarding.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job__when">Feb 2024 – May 2024</div>
+        <div>
+          <h3>Madison Technologies Vietnam JSC</h3>
+          <p class="role">Frontend Developer Intern</p>
+          <ul class="list">
+            <li>Built web interfaces and UI components in a Scrum/Agile team, breaking down tasks from design specs.</li>
+            <li>Rated “Outstanding” at internship completion.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <p class="eyebrow">Selected projects</p>
+      <h2>Other things I've built</h2>
+      <div class="grid2">
+        <div class="project">
+          <h3>Shelfnotes <span class="status">In development</span></h3>
+          <p>A web platform that turns creators' short product videos into a shoppable shelf. Each item carries the creator's own Amazon affiliate tag and an honest note on its drawbacks. Built on PostgreSQL (Neon).</p>
+          <p class="flow__link"><a href="https://shelfnotes-39lx.vercel.app/" target="_blank" rel="noopener">shelfnotes-39lx.vercel.app ↗</a></p>
+        </div>
+        <div class="project">
+          <h3>Automated reporting from third-party platforms</h3>
+          <p>n8n and Apps Script workflows that pull performance data from Meta (Graph / Insights API) and Geniuslink into Google Sheets on a schedule, producing auto-updated reports and dashboards with no manual exports.</p>
+        </div>
+        <div class="project">
+          <h3>Multi-channel content automation</h3>
+          <p>n8n and LLM workflows that schedule and publish short-form video across Facebook, TikTok and Pinterest for niche pages.</p>
+        </div>
+        <div class="project">
+          <h3>Amazon Trend Tracker</h3>
+          <p>Automated tracking of Amazon best-seller charts by niche, with Google Sheets and Apps Script.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS + EDUCATION -->
+    <section id="skills" class="section">
+      <p class="eyebrow">Skills</p>
+      <h2>The toolbox</h2>
+      <div class="grid2 skills">
+        <div><h3>Automation &amp; AI</h3><p>n8n (self-hosted &amp; cloud), Make.com, Google Apps Script, webhooks, OpenAI API, DeepSeek, Claude Code, AI chatbot agents (Smax, n8n RAG)</p></div>
+        <div><h3>Technical</h3><p>JavaScript, Python, RESTful APIs, web scraping (Apify), PostgreSQL, MongoDB, SQL, Google Sheets as database</p></div>
+        <div><h3>Meta &amp; Social</h3><p>Meta Business Suite / BM, Graph API, TikTok, YouTube, Pinterest, AdsPower, proxy management</p></div>
+        <div><h3>Content, Amazon &amp; Ops</h3><p>CapCut PC (proficient), Canva, AI content generation; winning-product research (Helium 10), deal &amp; promo-code curation; SOP design, training &amp; onboarding</p></div>
+      </div>
+      <p class="skills__foot">English (technical reading, basic conversation) · badminton, swimming</p>
+
+      <h3 class="edu__title">Education</h3>
+      <ul class="edu">
+        <li><span>2025</span><div><strong>AI Engineer Core Track</strong> · LLM Engineering, RAG, QLoRA, Agents · Udemy · <a href="https://www.udemy.com/certificate/UC-eb88277d-ad19-4130-966b-9c7f334df9f2" target="_blank" rel="noopener">verify</a></div></li>
+        <li><span>2022–23</span><div><strong>Iviettech Programmer Training Center, Da Nang</strong> · Front-End Development · GPA 8.0/10</div></li>
+        <li><span>2017–21</span><div><strong>University of Economics Ho Chi Minh City (UEH)</strong> · B.Sc. in Finance and Banking · GPA 7.24/10</div></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Contact · Da Nang, Vietnam</p>
+      <h2>Let's automate it.</h2>
+      <a class="contact__mail" href="mailto:dongbantran@gmail.com">dongbantran@gmail.com</a>
+      <ul class="contact__links">
+        <li><a href="https://linkedin.com/in/dongbantran" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/techdb-tran" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="https://blogcuabong.io.vn" target="_blank" rel="noopener">Blog ↗</a></li>
+        <li><a href="/Dong_Ban_Tran_CV.pdf" download>Download CV ↓</a></li>
+      </ul>
+      <p class="contact__foot">© 2026 Dong Ban Tran</p>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
