@@ -19,7 +19,7 @@ html { background: var(--ink); -webkit-text-size-adjust: 100%; scroll-padding-to
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body { background: var(--ink); color: var(--text); font: 400 clamp(16px, 1.1vw, 17px)/1.6 var(--body); overflow-x: clip; }
 ul { padding: 0; list-style: none; }
-img, video { display: block; max-width: 100%; height: auto; }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 strong { color: var(--paper); font-weight: 600; }
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 4px; }
@@ -83,10 +83,8 @@ h1 { font-size: clamp(56px, 7.6vw, 124px); font-weight: 800; line-height: .92; l
 .flow__link a { color: var(--amber); overflow-wrap: anywhere; }
 .status { display: inline-block; padding: 2px 9px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); font: 500 11.5px/1.5 var(--mono); letter-spacing: 0; vertical-align: middle; }
 
-.flow--verda { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: clamp(24px, 5vw, 64px); align-items: start; }
 .flow--verda .flow__head { margin: 0; }
 .verda__shot { width: 100%; max-width: 440px; margin-top: 22px; border: 1px solid var(--line); border-radius: 12px; }
-.verda__video { width: 100%; border-radius: 12px; border: 1px solid var(--line); background: #000; }
 .flows__more { margin-top: clamp(36px, 5vw, 56px); font: 500 15px var(--mono); color: var(--paper); }
 
 /* ---------- content blocks ---------- */
@@ -124,8 +122,7 @@ h1 { font-size: clamp(56px, 7.6vw, 124px); font-weight: 800; line-height: .92; l
   .hero__copy { grid-row: 2; }
   .about { grid-template-columns: minmax(0, 1fr); }
   .about__photo { max-width: 200px; }
-  .grid3, .grid2, .flow--verda { grid-template-columns: minmax(0, 1fr); }
-  .verda__video { max-width: 340px; }
+  .grid3, .grid2 { grid-template-columns: minmax(0, 1fr); }
   .job { grid-template-columns: minmax(0, 1fr); }
   .job__when { line-height: 1.4; }
 }
