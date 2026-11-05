@@ -59,7 +59,7 @@
     <section id="workflows" class="section">
       <p class="eyebrow">Workflows I've deployed</p>
       <h2>Real automations, from the canvas</h2>
-      <p class="section__lede">Five examples, shown as they were built. Click a diagram to open it at full size.</p>
+      <p class="section__lede">Six examples, shown as they were built. Click a diagram to open it at full size.</p>
 
       <article class="flow">
         <div class="flow__head">
@@ -105,9 +105,20 @@
         </a>
       </article>
 
+      <article class="flow">
+        <div class="flow__head">
+          <p class="flow__tag">05 · n8n · Meta Graph API</p>
+          <h3>Automated monthly reports with data pulled from Meta</h3>
+          <p>On the 1st of each month, the workflow goes through every unreported page in a sheet, gets its access token, pulls last month's numbers from Meta and writes them back. Reels above a view threshold are added to a Top Reels tab, and a second trigger on the 28th clears the sheet for the next cycle.</p>
+        </div>
+        <a class="flow__fig" href="/flows/monthly-report.webp" target="_blank" rel="noopener">
+          <img src="/flows/monthly-report.webp" width="1250" height="504" loading="lazy" alt="n8n workflow: two schedule triggers feed a config step and a report-or-reset switch. The report branch reads the page list, gets a page token, fetches Meta metrics, updates the sheet, filters top Reels and waits one second before the next page. The reset branch reads all pages and clears the metric columns." />
+        </a>
+      </article>
+
       <article class="flow flow--verda">
         <div class="flow__head">
-          <p class="flow__tag">05 · Tool · AI video</p>
+          <p class="flow__tag">06 · Tool · AI video</p>
           <h3>Verda: video ads from an Amazon product link</h3>
           <p>A tool I deployed that generates a video ad from an Amazon product link, with an AI script, voiceover and avatar.</p>
           <p class="flow__link"><a href="https://verda-ai-studio.vercel.app/" target="_blank" rel="noopener">verda-ai-studio.vercel.app ↗</a><span class="status">Server under maintenance</span></p>
